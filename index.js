@@ -8,6 +8,4 @@ app.use('/rotas', rotaProdutos);
 
 app.listen(port, () => {
     console.log(`Ativo na porta: ${port}`);
-})
-
-module.exports = app;
+});
