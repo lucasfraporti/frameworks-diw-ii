@@ -1,10 +1,10 @@
 {
   "name": "frameworks_diw_ii",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API para CRUD de produtos",
+  "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node App.js"
   },
   "author": "",
   "license": "ISC",

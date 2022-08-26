@@ -1,11 +1,11 @@
 const express = require('express');
-const app = express();
+const App = express();
 const port = 8001;
 
 const rotaProdutos = require('./routes/routeProduto');
 
-app.use('/rotas', rotaProdutos);
+App.use('/rotas', rotaProdutos);
 
-app.listen(port, () => {
+App.listen(port, () => {
     console.log(`Ativo na porta: ${port}`);
 });
