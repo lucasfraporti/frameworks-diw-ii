@@ -1,7 +1,10 @@
+const Produto = require('../model/produto');
+
 /* ================================================== */
 
 // let é voltado para variáveis que irão mudar o seu valor
 // const é mais voltado para variáveis que não vão se modificar
+/*
 const produtos = [
     { id: 1, name: 'Arroz', price: 4.5 },
     { id: 2, name: 'Bolacha', price: 2.5 },
@@ -10,11 +13,18 @@ const produtos = [
 ]
 
 let idGerado = 5;
+*/
 
 /* ================================================== */
 
 exports.listarProdutos = (req, res) => {
-    return res.status(200).json(produtos);
+    // return res.status(200).json(produtos);
+    Produto.find({}, (err, produtos) => {
+        if(err){
+            res.status(500).send(err);
+        }
+        res.json(produtos);
+    });
 };
 
 exports.listarProdutoId = (req, res) => {
