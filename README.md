@@ -1,4 +1,4 @@
-# Iniciar o projeto
+# Iniciando o projeto
 `npm install`
 
 `npm start`
