@@ -1,7 +1,7 @@
 {
-  "name": "userscrud",
+  "name": "frameworks_diw_ii",
   "version": "1.0.0",
-  "description": "",
+  "description": "API para CRUD de produtos e usuários",
   "main": "App.js",
   "scripts": {
     "start": "nodemon App.js"
@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv-safe": "^8.2.0",
+    "bcrypt": "^5.0.1",
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.6.1"
+    "mongoose": "^6.5.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
