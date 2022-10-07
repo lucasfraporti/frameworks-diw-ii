@@ -6,7 +6,9 @@ const produtoSchema = new Schema({
     price: Number,
 },
 {
-    versionKey: false
+    versionKey: false,
+    // collection: 'nome_da_collection'
 });
 
 module.exports = mongoose.model('Produto', produtoSchema);
+// Nome da collection será "produtos", ele se baseia nesse 'Produto'

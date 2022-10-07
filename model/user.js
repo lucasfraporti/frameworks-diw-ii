@@ -7,7 +7,9 @@ const userSchema = new Schema({
     password: String
 },
 {
-    versionKey: false
+    versionKey: false,
+    // collection: 'nome_da_collection'
 });
 
 module.exports = mongoose.model('User', userSchema);
+// Nome da collection será "users", ele se baseia nesse 'User'
